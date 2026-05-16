@@ -41,3 +41,50 @@ All Crystal persona content (system prompts, voice guidelines, character notes) 
 **Decision**: All scheduled X posts will include attached images (1080×1350px vertical format). Text-only posts are suspended pending evidence that reach improves with consistent image attachment. Image assets are maintained in `Our-Clear-Haven/autoposter/images/`.  
 **Approved by**: George Scharfetter (Chair)  
 **Status**: ✅ Active
+
+---
+
+### Zendesk Tech for Good Application — Narrative Approved
+**Date**: 2026-05-16  
+**Decision**: Approve final narrative (Draft 7) for the Zendesk Tech for Good grant application. Document filed at `/docs/Zendesk_Tech_for_Good_Narrative_Final.md`.
+
+Narrative prepared collaboratively by the AI Advisory Board (Claude, Grok, Perplexity, Gemini) across seven drafts. Key elements: founder story, Oregon homelessness statistics, Firebase + Zendesk integration architecture, 1,000-user first-year target, and request for full Suite access and implementation support.  
+**Approved by**: George Scharfetter (Chair)  
+**Status**: ✅ Ready for submission — deadline July 15, 2026
+
+---
+
+### AI Advisory Board Expansion
+**Date**: 2026-05-16  
+**Decision**: Expand the AI Advisory Board to include Gemini (Google DeepMind) and Perplexity AI in addition to existing advisors Claude (Anthropic) and Grok (xAI). Microsoft Copilot under consideration as development tooling rather than a board seat.
+
+**Rationale**: Gemini brings Google Workspace integration and multimodal capabilities; Perplexity provides real-time research and grant monitoring. All AI advisors remain advisory only — Chair retains final authority on all decisions per the Governance framework.  
+**Approved by**: George Scharfetter (Chair)  
+**Status**: ✅ Active
+
+---
+
+### Microsoft Copilot Appointed to AI Advisory Board
+**Date**: 2026-05-16  
+**Decision**: Following a two-round board vote, Microsoft Copilot is appointed as the 5th AI Advisory Board member. The board reached a 2-2 tie between Copilot and GPT-4o; Chair George Scharfetter exercised the tiebreaker in favor of Copilot.
+
+**Rationale**: Copilot provides GPT-4o reasoning capability plus Microsoft integration layer — VS Code/GitHub Copilot for active Flutter development, Azure for Nonprofits infrastructure credits, DALL-E 3 image generation, and Office-native document output. Assessed as two capabilities for the price of one board seat.
+
+**Full board (5 AI + Chair)**:
+- Claude (Anthropic)
+- Grok (xAI)
+- Gemini (Google DeepMind)
+- Perplexity (Perplexity AI)
+- Copilot (Microsoft) ← new
+
+**Approved by**: George Scharfetter (Chair, tiebreaker)  
+**Status**: ✅ Active
+
+---
+
+### Chair Title Established
+**Date**: 2026-05-16  
+**Decision**: George Scharfetter's official title on the OCH Dual Board of Directors is **Founder & Chief Mission Steward** — a board compromise across five AI director nominations over three rounds.
+
+**Approved by**: George Scharfetter (Chair)  
+**Status**: ✅ Active
