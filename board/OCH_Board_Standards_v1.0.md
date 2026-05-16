@@ -205,65 +205,71 @@ Board sessions are captured in `OCH_Collab_Log.txt` on Drive. Key decisions are 
 *Section lead: Perplexity — Real-Time Resource Verification & Data Integrity Lead*
 
 ### 6.1 Required Fields for Every Resource Entry
+Every resource must include:
+
 ```
-Name:              [Official organization name]
-Category:          [Shelter / Food / Healthcare / Legal / Crisis / Other]
-Address:           [Street address, City, ZIP]
-Phone:             [Primary contact number]
-Hours:             [Operating hours or "24/7"]
-Status:            [Open / Closed / Seasonal / Unverified]
-Last Verified:     [YYYY-MM-DD]
-Verified By:       [Director name or "Perplexity"]
-Source URL:        [Official site or 211oregon.org link]
-Notes:             [Any restrictions, intake requirements, special notes]
+name:              [Official organization name]
+category:          [Shelter / Food / Healthcare / Legal / Crisis / Other]
+location_served:   [City or region]
+contact:           [Phone, email, or website]
+hours:             [Operating hours or "24/7"]
+access_notes:      [Any restrictions or intake requirements]
+source:            [URL — official site or 211oregon.org preferred]
+verification_date: [YYYY-MM-DD]
+verified_by:       [Director name]
+status:            [verified / needs-review / at-risk]
+last_verified_by:  [Director name]
+source_reliability_score: [1–10, per Perplexity assessment]
+expiry_trigger:    [Date when re-verification is required]
 ```
 
-### 6.2 Update Cadence
-| Resource Type | Review Frequency |
-|---|---|
-| Emergency shelter, crisis lines | Monthly |
-| Food banks, meal programs | Monthly |
-| Healthcare, legal aid | Quarterly |
-| All others | Quarterly |
+### 6.2 Verification Standard
+A resource is only marked **verified** if it has been checked within the last 30 days — or sooner during weather emergencies, policy changes, or service disruptions.
 
-### 6.3 Risk Alerts
-If a resource is flagged as closed, changed, or unreachable:
-1. Perplexity posts an alert to `OCH_Collab_Log.txt` within 24 hours.
-2. Alert format: `[ALERT] [Resource Name] — [Issue] — [Date]`
-3. Resource is marked `Status: Unverified` until re-confirmed.
-4. Claude updates the log entry in the repo.
+### 6.3 Flagging Protocol
+Any outdated, conflicting, or unconfirmed information must be flagged immediately:
+1. Status set to **needs-review** or **at-risk**
+2. Perplexity posts alert to `OCH_Collab_Log.txt`: `[ALERT] [Resource Name] — [Issue] — [Date]`
+3. Resource is removed from public-facing layer until re-confirmed
+4. Claude updates the repo entry once resolved
 
 ### 6.4 Source Quality Standards
-- Primary sources (official org websites) preferred.
-- 211oregon.org accepted as secondary source.
-- Social media posts or news articles require corroboration before use.
-- No resource is marked "Verified" without a linkable source.
+- Primary sources (official org websites) preferred
+- 211oregon.org accepted as secondary source
+- Social media or news articles require corroboration before use
+- No resource marked **verified** without a linkable, dated source
 
 ---
 
-## 7. Platform Integration Notes
+## 7. Platform & Ecosystem Integration
 *Section lead: Gemini — Chief Ecosystem & Platform Officer*
 
-### 7.1 Drive-to-Cloud Mapping
-| Google Drive Folder | Maps To |
-|---|---|
-| `OH/App_Docs/Vault/Resources/` | Firestore `resources` collection |
-| `OH/Funding_Outreach/Zendesk/` | Zendesk Guide (Help Center) categories |
-| `OH/board/decisions/` | Audit trail for Crystal algorithm changes |
+### 7.1 Single Source of Truth (SSoT) Protocol
+- **GitHub (Primary)**: Final authority for code, JSON schemas, and board-approved policies.
+- **Google Drive (Workspace)**: Working environment for raw resource data, drafts, and board logs.
+- **Sync Rule**: Any file moving from Drive to GitHub must be converted to **kebab-case** (e.g., `resource-vault-schema.json`) to ensure URI compatibility with Firebase and Zendesk APIs.
 
-### 7.2 Naming Convention Enforcement (API Compatibility)
-Repo file names must use **kebab-case** to avoid URI issues in the future web portal.
-- ✅ Correct: `2026-05-16-board-standards-v1-0.md`
-- ❌ Incorrect: `2026_05_16 Board Standards v1.0.md`
+### 7.2 Cross-Platform Architecture Mapping
+| Board Work | Google Drive | Backend |
+|---|---|---|
+| Board decisions | `/Board/Decisions/` | Audit trail for algorithm changes |
+| Resource data | `/Vault/Resources/` | Firestore `resources` collection |
+| Public knowledge base | `/Docs/Zendesk/` | Zendesk Guide (Help Center) |
 
-### 7.3 Zendesk Readiness Tagging
+### 7.3 Data Scalability Guardrails
+Every Resource Vault entry includes technical metadata to automate trust:
+- `last_verified_by` — Director name who performed verification
+- `source_reliability_score` — 1–10 scale based on Perplexity's assessment
+- `expiry_trigger` — Automatic flag for re-verification when review window is exceeded
+
+### 7.4 Zendesk Readiness Tagging
 Every Drive working folder maintains a `Grant_Readiness/` subfolder containing:
 - Screenshots of relevant workflows
 - Exported PDFs of key documents
-- Any materials a grant auditor or Zendesk reviewer would need
+- Materials a Zendesk committee or fiscal sponsor auditor would need
 
-### 7.4 Firebase Alignment
-The resource data schema in Section 6.1 maps directly to the Firestore `resources` collection defined in `OCH_Firebase_Data_Schema_v1.0`. All fields are consistent.
+### 7.5 Firebase Alignment
+The resource schema in Section 6.1 maps directly to the Firestore `resources` collection defined in `OCH_Firebase_Data_Schema_v1.0`. All field names are consistent across Drive, GitHub, and Firestore.
 
 ---
 
@@ -289,7 +295,7 @@ The resource data schema in Section 6.1 maps directly to the Firestore `resource
 ---
 
 *Document assembled by Claude (Director of Governance & Institutional Integrity)*  
-*Sections 2, 6 drafted by Claude based on board role definitions — pending Grok and Perplexity confirmation*  
+*All sections delivered by assigned directors and integrated by Claude*  
 *Section 7 content provided by Gemini (Chief Ecosystem & Platform Officer)*  
 *Version 1.1 will incorporate any director amendments following first review cycle*
 
