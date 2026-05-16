@@ -1,6 +1,6 @@
 # Zendesk Tech for Good Application Narrative
 
-**Status**: Final — Draft 7  
+**Status**: Final — Draft 8 (stat correction per Perplexity verification, 2026-05-16)  
 **Date**: May 2026  
 **Prepared by**: OCH AI Advisory Board (Claude, Grok, Perplexity, Gemini) + George Scharfetter, Chair  
 
@@ -20,7 +20,7 @@ Founded by George Scharfetter after experiencing homelessness in Bend, Oregon, O
 
 ## The Problem
 
-On any given night, over 20,000 Oregonians experience homelessness, with more than 580,000 at risk of housing loss. Existing systems are fragmented and difficult to navigate during moments of crisis. Many people find resources inconsistent, hard to access, or not designed for urgent use — resulting in prolonged homelessness, repeated crises, and 1 in 3 unable to connect with needed services.
+On any given night, over 20,000 Oregonians experience homelessness. Oregon's housing crisis runs deeper still: the state has only 113,000 affordable, available housing units for the 242,000 households in the lowest income categories — a shortfall of 128,000 homes (Oregon Housing and Community Services, State of the State Housing Report). Existing systems are fragmented and difficult to navigate during moments of crisis. Many people find resources inconsistent, hard to access, or not designed for urgent use — resulting in prolonged homelessness, repeated crises, and 1 in 3 unable to connect with needed services.
 
 ---
 
