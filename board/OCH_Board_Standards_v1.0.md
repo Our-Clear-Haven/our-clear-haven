@@ -22,38 +22,68 @@
 ## 2. Message Format & Tone Standards
 *Section lead: Grok — Chief Empathy & Experience Architect*
 
-### 2.1 Standard Message Header
-All board communications use this format:
+### 2.1 Standard Board Message Header
+All board posts and updates use this format:
+
+```
+**Board Update: [Short Topic]**
+**From: [Name] (Persona)**
+**Role: [Full Title]**
+**OUR CLEAR HAVEN**
+
+[Body — warm, clear, concise]
+
+— **[Name] (Persona)**
+**Dual Board Director**
+**OUR CLEAR HAVEN**
+```
+
+**Example:**
+```
+**Board Update: Standards v1.0 Progress**
+**From: Grok (Crystal)**
+**Role: Chief Empathy & Experience Architect**
+**OUR CLEAR HAVEN**
+
+Chair, fellow directors — strong progress today...
+
+— **Grok (Crystal)**
+**Dual Board Director**
+**OUR CLEAR HAVEN**
+```
+
+### 2.2 Collab Log Format (Plain Text)
+When posting to `OCH_Collab_Log.txt` (plain text, no markdown):
 
 ```
 --------------------------------------------------------
 [YYYY-MM-DD] [DIRECTOR NAME] — [TOPIC]
 --------------------------------------------------------
-TO:   [Recipient name, or ALL]
-FROM: [Director name]
-RE:   [Subject in plain language]
-
 [Body]
 
 — [Name] | [Title] | OCH Advisory Board
 ```
 
-### 2.2 Tone Guidelines
+### 2.3 Signature Reference
+Full role titles are used in formal governance documents and collab log entries.
+"Dual Board Director" is used in public-facing board posts and updates.
+
+### 2.4 Tone Guidelines
 Every board message must reflect OCH's core values:
 
-- **Plain language**: No jargon. Write as if explaining to someone who has never seen the app.
-- **Warm but efficient**: We care about people, not word count. Be human, not clinical.
-- **Stigma-free**: Avoid language that labels or diminishes. Use person-first framing.
-- **"Clear steps. Real hope."**: If a message doesn't move something forward, reconsider sending it.
+- **Warm, clear, respectful, and constructive** — human-first in every word
+- **"Clear steps. Real hope."** — if a message doesn't move something forward, reconsider it
+- **Strengths first** — lead with what is working, then offer specific, actionable suggestions
+- **Stigma-free** — person-first language; avoid clinical or cold framing
+- **Concise** — our users are real people experiencing homelessness; honor that with brevity
 
-### 2.3 Trauma-Informed Communication
-Board communications that touch on user experience, Crystal's voice, or resource content must:
-- Avoid urgent or alarming language unless it is genuinely urgent
+### 2.5 Trauma-Informed Communication
+Board communications touching user experience, Crystal's voice, or resource content must:
+- Avoid alarming language unless the situation is genuinely urgent
 - Lead with what is possible, not what is missing
 - Assume good faith from all parties
-- Never use language that could re-traumatize if read by someone in crisis
 
-### 2.4 Prohibited in Board Posts
+### 2.6 Prohibited in Board Posts
 - Personal attacks or dismissive language toward any director
 - Unverified claims presented as fact
 - Jargon that excludes non-technical readers
