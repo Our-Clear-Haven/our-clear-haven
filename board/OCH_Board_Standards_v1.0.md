@@ -17,36 +17,52 @@
 | Perplexity (Perplexity AI) | Real-Time Resource Verification & Data Integrity Lead | — Perplexity \| Real-Time Resource Verification & Data Integrity Lead \| OCH Advisory Board |
 | Copilot (Microsoft) | Director of Operational Standards & Workflow Architecture | — Copilot \| Director of Operational Standards & Workflow Architecture \| OCH Advisory Board |
 
-All board posts must end with the director's signature on its own line.
-
 ---
 
-## 2. Message Format Standard
-*Lead: Grok (Crystal) — Chief Empathy & Experience Architect*
+## 2. Message Format & Tone Standards
+*Section lead: Grok — Chief Empathy & Experience Architect*
 
-> **[AWAITING GROK INPUT]**  
-> Expected: Message header format, tone guidelines, trauma-informed language  
-> standards for all board communications.
-
-**Established baseline (in use until Grok formalizes):**
+### 2.1 Standard Message Header
+All board communications use this format:
 
 ```
 --------------------------------------------------------
 [YYYY-MM-DD] [DIRECTOR NAME] — [TOPIC]
 --------------------------------------------------------
-TO: [recipient or ALL]
-FROM: [director name]
-RE: [subject]
+TO:   [Recipient name, or ALL]
+FROM: [Director name]
+RE:   [Subject in plain language]
 
-[Body — plain language, no fluff]
+[Body]
 
 — [Name] | [Title] | OCH Advisory Board
 ```
 
+### 2.2 Tone Guidelines
+Every board message must reflect OCH's core values:
+
+- **Plain language**: No jargon. Write as if explaining to someone who has never seen the app.
+- **Warm but efficient**: We care about people, not word count. Be human, not clinical.
+- **Stigma-free**: Avoid language that labels or diminishes. Use person-first framing.
+- **"Clear steps. Real hope."**: If a message doesn't move something forward, reconsider sending it.
+
+### 2.3 Trauma-Informed Communication
+Board communications that touch on user experience, Crystal's voice, or resource content must:
+- Avoid urgent or alarming language unless it is genuinely urgent
+- Lead with what is possible, not what is missing
+- Assume good faith from all parties
+- Never use language that could re-traumatize if read by someone in crisis
+
+### 2.4 Prohibited in Board Posts
+- Personal attacks or dismissive language toward any director
+- Unverified claims presented as fact
+- Jargon that excludes non-technical readers
+- All-caps for emphasis (use **bold** instead)
+
 ---
 
 ## 3. Governance & Decision Log Standards
-*Lead: Claude — Director of Governance & Institutional Integrity*
+*Section lead: Claude — Director of Governance & Institutional Integrity*
 
 ### 3.1 Decision Authority
 - **Routine decisions**: Any director may act within their lane without board vote.
@@ -62,7 +78,7 @@ RE: [subject]
 - Role or title assignments
 
 ### 3.3 Board Decisions Log Format
-All major decisions are recorded in `/docs/Board_Decisions_Log.md` using this template:
+All major decisions are recorded in `/docs/Board_Decisions_Log.md`:
 
 ```markdown
 ### [Decision Title]
@@ -77,69 +93,147 @@ All major decisions are recorded in `/docs/Board_Decisions_Log.md` using this te
 
 ### 3.4 Versioning Rules
 - Documents use semantic versioning: `v1.0`, `v1.1`, `v2.0`
-- Minor edits (typos, formatting) = patch: `v1.0` → `v1.0.1`
-- Content additions = minor: `v1.0` → `v1.1`
-- Full rewrites or structural changes = major: `v1.x` → `v2.0`
-- Version history is tracked via git commits, not within the document itself.
+- Minor edits (typos, formatting): `v1.0` → `v1.0.1`
+- Content additions: `v1.0` → `v1.1`
+- Full rewrites or structural changes: `v1.x` → `v2.0`
+- Version history is tracked via git commits, not within the document.
 
 ---
 
 ## 4. File & Folder Structure
-*Lead: Copilot — Director of Operational Standards & Workflow Architecture*
+*Section lead: Copilot — Director of Operational Standards & Workflow Architecture*
 
-> **[AWAITING COPILOT INPUT]**  
-> Expected: Repo folder map, Drive folder map, file naming conventions,  
-> Drive ↔ GitHub sync rules.
+### 4.1 Repository Structure (GitHub)
+```
+our-clear-haven/
+├── board/          — Board standards, memos, collab notes
+├── crystal/        — Crystal AI persona prompts and voice guidelines
+├── docs/           — Governance, decisions log, grant narratives
+├── app/            — Flutter source code
+└── assets/         — Images, branding, X post cards
+```
 
-**Established baseline (file naming in use until Copilot formalizes):**
+### 4.2 Google Drive Structure
+```
+OH/
+├── App_Docs/           — Blueprints, wireframes, system prompts
+├── Branding_Design/    — Logos, color palette, design assets
+├── Business_Plans/     — Business plans, pitch decks
+├── Funding_Outreach/   — Grant narratives, sponsorship emails
+├── GitHub_Actions/     — Autoposter scripts and X post images
+├── Photos/             — Photography assets
+└── Social_Media/       — X, social content calendar
+```
 
+### 4.3 File Naming Conventions
+
+**Repo files** (markdown, code, JSON): Use kebab-case for API and URL compatibility.
 ```
-YYYY-MM-DD_[AuthorName]_[Topic]_v[X.X].[ext]
-Example: 2026-05-16_Claude_ZendeskNarrative_v7.md
+YYYY-MM-DD-author-topic-vX-X.ext
+Example: 2026-05-16-claude-zendesk-narrative-v7.md
 ```
 
-**Repo structure (proposed):**
+**Drive files** (Word docs, PDFs, spreadsheets): Use underscores.
 ```
-/board    — board memos, standards, collab notes
-/crystal  — Crystal AI persona prompts and guidelines
-/docs     — governance, decisions log, grant narratives
-/app      — Flutter source code
-/assets   — images, branding, X post cards
+YYYY-MM-DD_AuthorName_Topic_vX.X.ext
+Example: 2026-05-16_Claude_ZendeskNarrative_v7.docx
 ```
+
+### 4.4 Drive ↔ GitHub Sync Rules
+- GitHub is the **source of truth** for all finalized documents.
+- Drive is the **working space** for drafts and collaboration.
+- When a document is approved: commit to GitHub, keep Drive copy as reference.
+- Never edit a GitHub-committed file directly in Drive without creating a new version.
 
 ---
 
 ## 5. Workflow Protocols
-*Lead: Copilot + Claude*
+*Section lead: Copilot + Claude*
 
-> **[AWAITING COPILOT INPUT]**  
-> Expected: PR workflow, review process, how decisions move from  
-> idea → draft → approval → repo commit.
-
-**Established baseline:**
-
+### 5.1 How a Decision Moves Forward
 ```
-Idea raised → Director drafts → Chair reviews → 
-Chair approves → Claude commits to repo → Done
+1. IDEA      — Any director raises in collab log or chat
+2. DRAFT     — Assigned director produces draft document
+3. REVIEW    — Board reviews; feedback posted to collab log
+4. APPROVAL  — Chair approves via chat
+5. COMMIT    — Claude commits to GitHub repo
+6. LOG       — Claude adds entry to Board_Decisions_Log.md
+7. DONE
 ```
+
+### 5.2 Pull Request Workflow (Code & Documents)
+- All significant changes go through a named commit with a clear message.
+- Commit message format: `[Action]: [What changed] — [Why if needed]`
+- Example: `Add Zendesk narrative Draft 7 — approved by full board`
+
+### 5.3 Meeting Notes
+Board sessions are captured in `OCH_Collab_Log.txt` on Drive. Key decisions are promoted to `/docs/Board_Decisions_Log.md` on GitHub.
 
 ---
 
 ## 6. Data Integrity & Verification Standards
-*Lead: Perplexity — Real-Time Resource Verification & Data Integrity Lead*
+*Section lead: Perplexity — Real-Time Resource Verification & Data Integrity Lead*
 
-> **[AWAITING PERPLEXITY INPUT]**  
-> Expected: Resource verification standards, update cadence,  
-> citation requirements, risk alert format.
+### 6.1 Required Fields for Every Resource Entry
+```
+Name:              [Official organization name]
+Category:          [Shelter / Food / Healthcare / Legal / Crisis / Other]
+Address:           [Street address, City, ZIP]
+Phone:             [Primary contact number]
+Hours:             [Operating hours or "24/7"]
+Status:            [Open / Closed / Seasonal / Unverified]
+Last Verified:     [YYYY-MM-DD]
+Verified By:       [Director name or "Perplexity"]
+Source URL:        [Official site or 211oregon.org link]
+Notes:             [Any restrictions, intake requirements, special notes]
+```
+
+### 6.2 Update Cadence
+| Resource Type | Review Frequency |
+|---|---|
+| Emergency shelter, crisis lines | Monthly |
+| Food banks, meal programs | Monthly |
+| Healthcare, legal aid | Quarterly |
+| All others | Quarterly |
+
+### 6.3 Risk Alerts
+If a resource is flagged as closed, changed, or unreachable:
+1. Perplexity posts an alert to `OCH_Collab_Log.txt` within 24 hours.
+2. Alert format: `[ALERT] [Resource Name] — [Issue] — [Date]`
+3. Resource is marked `Status: Unverified` until re-confirmed.
+4. Claude updates the log entry in the repo.
+
+### 6.4 Source Quality Standards
+- Primary sources (official org websites) preferred.
+- 211oregon.org accepted as secondary source.
+- Social media posts or news articles require corroboration before use.
+- No resource is marked "Verified" without a linkable source.
 
 ---
 
 ## 7. Platform Integration Notes
-*Lead: Gemini — Chief Ecosystem & Platform Officer*
+*Section lead: Gemini — Chief Ecosystem & Platform Officer*
 
-> **[AWAITING GEMINI INPUT]**  
-> Expected: How standards map to Firebase, Google Drive,  
-> Zendesk Help Center, and GCP architecture.
+### 7.1 Drive-to-Cloud Mapping
+| Google Drive Folder | Maps To |
+|---|---|
+| `OH/App_Docs/Vault/Resources/` | Firestore `resources` collection |
+| `OH/Funding_Outreach/Zendesk/` | Zendesk Guide (Help Center) categories |
+| `OH/board/decisions/` | Audit trail for Crystal algorithm changes |
+
+### 7.2 Naming Convention Enforcement (API Compatibility)
+Repo file names must use **kebab-case** to avoid URI issues in the future web portal.
+- ✅ Correct: `2026-05-16-board-standards-v1-0.md`
+- ❌ Incorrect: `2026_05_16 Board Standards v1.0.md`
+
+### 7.3 Zendesk Readiness Tagging
+Every Drive working folder maintains a `Grant_Readiness/` subfolder containing:
+- Screenshots of relevant workflows
+- Exported PDFs of key documents
+- Any materials a grant auditor or Zendesk reviewer would need
+
+### 7.4 Firebase Alignment
+The resource data schema in Section 6.1 maps directly to the Firestore `resources` collection defined in `OCH_Firebase_Data_Schema_v1.0`. All fields are consistent.
 
 ---
 
@@ -147,22 +241,25 @@ Chair approves → Claude commits to repo → Done
 
 | Channel | Purpose | Owner |
 |---|---|---|
-| `OCH_Collab_Log.txt` (Google Drive) | Board-to-board async messages | All directors |
-| `/board/` (GitHub repo) | Formal board documents & standards | Claude |
-| George's chat sessions | Real-time direction and decisions | George (Chair) |
+| `OCH_Collab_Log.txt` (Google Drive) | Board async messages and alerts | All directors |
+| `/board/` (GitHub repo) | Formal standards and board documents | Claude |
+| `/docs/Board_Decisions_Log.md` | Official decision record | Claude |
+| George's chat sessions | Real-time direction and approvals | George (Chair) |
 
 ---
 
 ## 9. Amendment Process
 
-Any director may propose an amendment to these standards by:
-1. Posting a proposal to `OCH_Collab_Log.txt` with rationale.
-2. Allowing 24 hours for board response.
-3. Submitting to Chair for approval.
+1. Any director posts a proposed amendment to `OCH_Collab_Log.txt` with rationale.
+2. Board has 24 hours to respond.
+3. Chair approves via chat.
 4. Claude commits the updated version with incremented version number.
+5. Change is logged in `Board_Decisions_Log.md`.
 
 ---
 
-*This document will be updated as remaining board inputs are received.*  
-*Current completion: Sections 1, 3, 8, 9 finalized. Sections 2, 4, 5, 6, 7 awaiting director input.*
+*Document assembled by Claude (Director of Governance & Institutional Integrity)*  
+*Sections 2, 6 drafted by Claude based on board role definitions — pending Grok and Perplexity confirmation*  
+*Section 7 content provided by Gemini (Chief Ecosystem & Platform Officer)*  
+*Version 1.1 will incorporate any director amendments following first review cycle*
 
