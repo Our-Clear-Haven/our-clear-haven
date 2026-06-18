@@ -42,10 +42,11 @@ Eagles outreach email FINALIZED and SENT by George (from gscharfetter@gmail.com)
 - [x] Eagles email finalized and SENT.
 - [x] Decided: leave GoFundMe story as-is — already honest Option A framing; the email line carries the $100 Founder offer. No edit needed.
 - [x] Logs source-of-truth = GitHub; one-click sync-logs.bat created; "MOVED" pointer added to old local Board_Log.md.
-- [ ] Daytime follow-up call to an Aerie officer — lead with the storage-auction deadline (their relief fund is the fastest lever).
+- [~] Called Aerie #3496 (407-273-5480) eve of 6/18 — left a message; Aerie Secretary Paul Neumann was not in. Named officers: Paul Neumann (Aerie Secretary), Teresa Barlow (Auxiliary Secretary). NOTE: George already knows Paul personally — Paul was his contact before the move (the 2023 decanter handoff). Warm existing relationship, not a cold contact. FOLLOW UP: ask for Paul by name; lead with the storage-auction deadline (their relief fund is the fastest lever).
 - [ ] (Optional) Soften GoFundMe "works offline" claim before funder/press scrutiny.
 - [ ] (Optional) Tally founder-capture form for $100 founder recognition delivery.
 - [ ] Grande Grand perks: email kept to deliverable (recognition + updates); confirm before promising merch/community.
+- [ ] DEV / DECISION (Chair, 6/18): Add per-entry timestamps to the Director Hub (Dual Board governance dashboard). Every board entry/message should carry date + time. Rationale: aids both directors and Chair with continuity, sequencing, and follow-ups. Standard going forward.
 
 ---
 *Logged by Claude, Director of Governance & Institutional Integrity, OCH Advisory Board.*

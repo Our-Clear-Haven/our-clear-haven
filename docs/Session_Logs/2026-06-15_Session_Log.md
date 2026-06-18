@@ -64,3 +64,33 @@ labeling this "incorrectly charged." Case auto-closes in 3 business days
 (repliable for 30).
 
 **Chair's decision:** Send one final supervisor-escalation reply (Option 3), citing
+Google's own "incorrectly charged" wording, requesting escalation before closure,
+and stating that if unresolved, OCH continues its exit and cancels the June 24
+meeting. ("More money has been spent on man hours to defend a refund than doing it.")
+
+**Billing breakdown (account 8961-5293-8912-0645):**
+- Plan: Google Workspace Business Starter, ~$8.40/seat/month.
+- May usage: 6 seats = $50.40 (auto-charged to Mastercard June 1; a payment also
+  declined for insufficient funds).
+- June 1 proration: 6 seats = $1.68; thereafter 1 seat ($4.76, Jun 2-18) — extras
+  deleted, forward billing corrected.
+- **Overcharge = 5 redundant seats: ~$42.00 (May) + ~$1.40 (June 1) = ~$43.40.**
+- Billing started May 2026; no earlier months. Credit requested: **$43.40**.
+
+## Open Items / Next Steps
+- [x] Calculate exact credit figure — **$43.40** (done).
+- [x] Confirm reps / June 24 meeting are official — **verified**.
+- [ ] Send final supervisor-escalation reply with the $43.40 figure.
+- [ ] Kill/disable the live service account key.
+- [ ] Confirm Workspace billing has actually stopped (in writing).
+- [ ] Decide whether to attend the June 24 call / entertain a partnership track.
+- [ ] (Optional) Draft OCH Vendor Resilience Principle (one-page board rule).
+- [ ] (Optional) Call-prep sheet finalized for June 24.
+
+## Reference
+- Google Exit & Migration Plan v1 drafted this session (Governance/
+  OCH_Google_Exit_Migration_Plan_2026-06-15.md): do Waves 0-3 now, defer
+  Firebase->Supabase until post-launch.
+
+---
+*Logged by Claude, Director of Governance & Institutional Integrity, OCH Advisory Board.*
