@@ -35,12 +35,17 @@ George is in acute personal financial need — working full time, unhoused 8+ mo
 ## Housekeeping
 - Confirmed logs source-of-truth is this GitHub repo. Stale local file `Dual Board/Working/Board_Log.md` to receive a "MOVED — see repo" pointer.
 
+## Outcome
+Eagles outreach email FINALIZED and SENT by George (from gscharfetter@gmail.com) the evening of June 18, 2026. Full board (Claude, Grok, Perplexity, Copilot) reviewed across multiple rounds; Chair synthesized the final. Email leads with the father's legacy and the decanter donation, tells the true hardship (Hashimoto's treatment reactions → extended medical leave → lost housing → motels → storage at risk of auction), invites $100 Grande Grand Founders via GoFundMe or the Grande Grand page, and asks for fiscal-sponsor introductions (acknowledging the Aerie's 501(c)(8) status rules it out as sponsor).
+
 ## Open Items / Next Steps
-- [ ] George confirms all Grande Grand $100 perks are deliverable (esp. merch + private community).
-- [ ] Finalize Eagles email (fold in board tweaks) and place in Gmail Drafts — George sends by his own hand.
-- [ ] Update GoFundMe story (Option A) so arrivals from the email see the $100 founding tier.
-- [ ] Daytime follow-up call to an Aerie officer.
-- [ ] Add "MOVED" pointer to the old local Board_Log.md.
+- [x] Eagles email finalized and SENT.
+- [x] Decided: leave GoFundMe story as-is — already honest Option A framing; the email line carries the $100 Founder offer. No edit needed.
+- [x] Logs source-of-truth = GitHub; one-click sync-logs.bat created; "MOVED" pointer added to old local Board_Log.md.
+- [ ] Daytime follow-up call to an Aerie officer — lead with the storage-auction deadline (their relief fund is the fastest lever).
+- [ ] (Optional) Soften GoFundMe "works offline" claim before funder/press scrutiny.
+- [ ] (Optional) Tally founder-capture form for $100 founder recognition delivery.
+- [ ] Grande Grand perks: email kept to deliverable (recognition + updates); confirm before promising merch/community.
 
 ---
 *Logged by Claude, Director of Governance & Institutional Integrity, OCH Advisory Board.*
