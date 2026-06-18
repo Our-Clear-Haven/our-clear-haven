@@ -52,15 +52,15 @@ Google relationship: billing dispute, board change, and OCH's vendor-independenc
   lock-in (Google's free engineer points the wrong way). Decision deferred; nothing
   to be committed on the June 24 call.
 
-## Open Items / Next Steps
-- [ ] Obtain per-seat monthly price + billed date range to calculate exact credit
-      figure (5 seats x rate x months).
-- [ ] Await Google's written confirmation that Sahil / the June 24 meeting are official.
-- [ ] Kill/disable the live service account key.
-- [ ] Confirm Workspace billing has actually stopped (in writing).
-- [ ] Decide whether to entertain a growth/partnership track at all.
-- [ ] (Optional) Draft OCH Vendor Resilience Principle (one-page board rule).
-- [ ] (Optional) Call-prep sheet finalized for June 24.
+## UPDATE — Billing Breakdown & Final Escalation (later same day)
 
----
-*Logged by Claude, Director of Governance & Institutional Integrity, OCH Advisory Board.*
+**Google verified the reps:** Via the authentic case thread, Sharoon confirmed
+Sahil Chhikara and delsolm (@xwf.google.com) are authorized Google employees and
+the June 24 meeting is official. Identity verified through the proper channel.
+
+**Google REVERSED on the credit:** Sharoon now states no credit was approved and
+declines to put any goodwill credit in writing — despite Google's own case subject
+labeling this "incorrectly charged." Case auto-closes in 3 business days
+(repliable for 30).
+
+**Chair's decision:** Send one final supervisor-escalation reply (Option 3), citing
